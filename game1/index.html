@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Bunny Defender</title>
     <script src="phaser/phaser.min.js"></script>
+    <script src="Boot.js"></script>
     <style>
         body {
             padding: 0;
@@ -19,6 +20,7 @@
     <script type="text/javascript">
         window.onload = function () {
             var game = new Phaser.Game(540, 960, Phaser.AUTO, 'gameContainer');
+            game.state.add('Boot', BunnyDefender.Boot);
         }
     </script>
 </body>
